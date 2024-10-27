@@ -4,11 +4,20 @@
 let inp = document.querySelector("input");
 
 inp.addEventListener("keydown", function(e){
-    console.log("key was pressed");
-    console.log(e);  // when we open this in console we will see main things like "code" and "key"
-    console.log(e.key);
+//    console.log("key was pressed");
+  //  console.log(e);  // when we open this in console we will see main things like "code" and "key"
+    //console.log(e.key);
     console.log(e.code);
-    
+    if(e.code == "ArrowUp"){
+        console.log("character moved up");
+    }else if(e.code == "ArrowDown"){
+        console.log("character moved down");
+    }else if(e.code == "ArrowLeft"){
+        console.log("character moved left");
+    }else if(e.code == "ArrowRight"){
+        console.log("character moved right");
+    }                
+
 })
 
 
