@@ -1,46 +1,35 @@
-// Keyboard Events 
-// when we print event which is default in callback function parameter 
+let form = document.querySelector("form");
 
-let inp = document.querySelector("input");
-
-inp.addEventListener("keydown", function(e){
-//    console.log("key was pressed");
-  //  console.log(e);  // when we open this in console we will see main things like "code" and "key"
-    //console.log(e.key);
-    console.log(e.code);
-    if(e.code == "ArrowUp"){
-        console.log("character moved up");
-    }else if(e.code == "ArrowDown"){
-        console.log("character moved down");
-    }else if(e.code == "ArrowLeft"){
-        console.log("character moved left");
-    }else if(e.code == "ArrowRight"){
-        console.log("character moved right");
-    }                
-
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    console.log("h");
+    // alert("form submitted");
 })
 
 
 
 
+// Keyboard Events 
+// when we print event which is default in callback function parameter 
 
+// let inp = document.querySelector("input");
 
+// inp.addEventListener("keydown", function(e){
+//    console.log("key was pressed");
+  //  console.log(e);  // when we open this in console we will see main things like "code" and "key"
+    //console.log(e.key);
+//     console.log(e.code);
+//     if(e.code == "ArrowUp"){
+//         console.log("character moved up");
+//     }else if(e.code == "ArrowDown"){
+//         console.log("character moved down");
+//     }else if(e.code == "ArrowLeft"){
+//         console.log("character moved left");
+//     }else if(e.code == "ArrowRight"){
+//         console.log("character moved right");
+//     }                
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// });
 
 
 
